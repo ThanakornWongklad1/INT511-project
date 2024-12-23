@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="../../inertia/assets/mascot.svg" />
+
+    <title inertia>
+      หยิบยืม
+    </title>
+
+    @vite(['inertia/app/app.ts', `inertia/pages/${page.component}.vue`])
+    @inertiaHead()
+    <style>
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: none;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #dadada;
+        border-radius: 2rem;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #dadada;
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen w-full font-kanit font-light">
+    @inertia()
+  </body>
+
+</html>
